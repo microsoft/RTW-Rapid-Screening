@@ -1,34 +1,13 @@
 ![alt text](https://store-images.s-microsoft.com/image/apps.39763.73792937-4301-4b9d-afe6-49c56a73671b.59a8c072-5293-44e2-a11d-c4e4dff9246c.3413aac0-262d-4181-813e-8f4c7feb2d1d)
 # Project
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+> This repository contains a Power BI desktop report for Rapid Screening Solution
 
-As the maintainer of this project, please make a few updates:
+## Requirements
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+Follow these steps to open the file in the Power BI Desktop and publish: https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-upload-desktop-files
 
-## Contributing
+## Power BI Terms of Use
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
+See Terms of Use for Power BI at: https://powerbi.microsoft.com/en-us/windows-license-terms/
 
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
-## Trademarks
-
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
-trademarks or logos is subject to and must follow 
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
-Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
-Any use of third-party trademarks or logos are subject to those third-party's policies.
