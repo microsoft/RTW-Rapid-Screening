@@ -2,4 +2,5 @@
 # Rapid Screening Solution Deployment Guide (Power Platform) V1.0
 
 > This is a technical whitepaper which outlines steps for deploying the Rapid Screening Solution.
+> This document is a preview draft 
 
