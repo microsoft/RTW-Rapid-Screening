@@ -1,34 +1,18 @@
 ![alt text](https://store-images.s-microsoft.com/image/apps.39763.73792937-4301-4b9d-afe6-49c56a73671b.59a8c072-5293-44e2-a11d-c4e4dff9246c.3413aac0-262d-4181-813e-8f4c7feb2d1d)
-# Packages
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+# Deployment Packages
 
-As the maintainer of this project, please make a few updates:
+> The packages section of this repo contains two sets of items:
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+- Azure: Azure componetns including Azure Function ,etc
+- Power Platform: This folder contians Power Platform Solution file, Configuration data and Configuration migration tool 
 
-## Contributing
+# Solution Architecture
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
 
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+## Installation Guide
 
-## Trademarks
+For installation and configuration, Follow the deployment guide at: https://github.com/microsoft/PowerApps-RTW-Canada-Solution/tree/main/Documentation
 
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
-trademarks or logos is subject to and must follow 
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
-Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
-Any use of third-party trademarks or logos are subject to those third-party's policies.
+
