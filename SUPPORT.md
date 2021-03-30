@@ -10,4 +10,4 @@ This project uses GitHub Issues to track bugs and feature requests. Please searc
 
 ## Microsoft Support Policy  
 
-Support for this project is limited to the resources listed above.
+[Details & Support](https://appsource.microsoft.com/en-us/product/dynamics-365/msemr.pprtwsoln?tab=DetailsAndSupport)
