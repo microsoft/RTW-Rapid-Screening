@@ -1,5 +1,5 @@
 ![alt text](https://store-images.s-microsoft.com/image/apps.39763.73792937-4301-4b9d-afe6-49c56a73671b.59a8c072-5293-44e2-a11d-c4e4dff9246c.3413aac0-262d-4181-813e-8f4c7feb2d1d)
-# COVID19 Rapid Screening Solution
+# COVID-19 Rapid Screening Solution
 
 > The Microsoft Rapid Screening solution templates enable enterprise organizations to deliver rapid Covid-19 screening of their employees through applications for both employees and health and safety officers. Organizations have piece of mind that they can secure their data within their own environment and gain insights about the program at the aggregate level. This solution meets the standards of the Creative Destruction Lab's Rapid Screening Consortium and can be used by member organizations. The solution is built on Power Platform and Azure
 
