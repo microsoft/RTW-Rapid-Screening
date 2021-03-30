@@ -9,6 +9,7 @@
 
 # Solution Architecture
 
+![High level solution architecture](https://github.com/microsoft/PowerApps-RTW-Canada-Solution/blob/main/Documentation/media/RSC_Architecture.jpg?raw=true)
 
 
 ## Installation Guide
