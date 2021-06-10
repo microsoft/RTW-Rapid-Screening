@@ -18,6 +18,7 @@ For installation and configuration, Follow the deployment guide at: https://gith
 | May 3rd, 2021    | Release version: 2.0.0.9   |
 | May 18th, 2021   | Release version: 2.0.0.10  |
 | May 20th, 2021   | Release version: 2.0.0.11  |
+| June 9th, 2021   |V5 - Release version: 2.0.0.111 |
 
 ## Disclaimer
  
