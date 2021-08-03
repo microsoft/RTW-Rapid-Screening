@@ -8,11 +8,11 @@ The artifacts in this repository are not officially released and may consist of 
 
 To deploy the complete Microsoft Rapid Screening Solution, you'll need to follow these steps:
 
-1. **Deploy Return to Workplace Managed Solution:** Download and import the [Return to Workplace Managed Solutions](https://github.com/microsoft/RTW-Rapid-Screening/raw/main/Packages/Power-Platform/returntoworkplace_managed.zip)
+1. **Deploy Return to Workplace Managed Solution:** Download and import the [`returntoworkplace_managed.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV1/Packages/Power-Platform/returntoworkplace_managed.zip) solution.
 1. **Create a blank Power Apps Portal**
-1. **Deploy RapidScreeningCombined:** Dowload and import the `RapidScreeningCombined_x_x_x_x.zip`, making sure to use the latest solution version.
-1. **Upload Portal Content:** Download `Rapid-Screening-Portal.zip` Portal Content and upload it to the Power Apps Portal.
-1. **Configure Solution:** (Optional) Configure the solution using [pre-configured settings](https://github.com/microsoft/RTW-Rapid-Screening/raw/main/Packages/Power-Platform/Solution-Data/Solution.Config.Data_V5.zip) **or** configure the solution manually. 
+1. **Deploy RapidScreeningCombined:** Dowload and import the [`RapidScreeningCombined_1_0_0_34.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV1/Packages/Power-Platform/RapidScreeningCombined_1_0_0_34.zip), making sure to use the latest solution version.
+1. **Upload Portal Content:** Download [`Rapid-Screening-Portal.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV1/Packages/Power-Platform/Rapid-Screening-Portal.zip) Portal Content and upload it to the Power Apps Portal.
+1. **Configure Solution:** (Optional) Configure the solution using [pre-configured settings](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV1/Packages/Power-Platform/Solution-Data/Solution.Config.Data_V5.zip) **or** configure the solution manually. 
 
 ## Deploy Return to Workplace Managed Solution
 
