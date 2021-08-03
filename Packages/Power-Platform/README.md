@@ -20,7 +20,7 @@ The **Return to Workplace** solution is a managed solution which acts as the fou
 
 To install it, follow these steps:
 
-1. Download the [returntoworkplace_managed](https://github.com/microsoft/RTW-Rapid-Screening/raw/main/Packages/Power-Platform/returntoworkplace_managed.zip) solution. Do not unzip it.
+1. Download the [returntoworkplace_managed](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV1/Packages/Power-Platform/returntoworkplace_managed.zip) solution. Do not unzip it.
 1.	Go to https://make.powerapps.com/ and login with the same account that was used to create the Power Apps environment
 2.	From the **Environment** drop-down, make sure that you have selected the **development** environment. 
     
@@ -119,13 +119,14 @@ The **Rapid Screening Combined** solution contains the data model, Power Apps, a
 
 To import it, follow these steps:
 
+1. Download the [`RapidScreeningCombined_1_0_0_34.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV1/Packages/Power-Platform/RapidScreeningCombined_1_0_0_34.zip) solution. Do not unzip it.
 1. Sign in to [Power Apps](https://make.powerapps.com).  Make sure that you are still in the correct environment (dev).
 
 1. Select **Solutions** from the navigation menu.
 
     ![Solutions](./assets/rsc1.png)
 
-1.	From the ribbon menu, select **Import** and select the `RapidScreeningCombined_x_x_x_xxx.zip` that you downloaded earlier. Select **Next**. 
+1.	From the ribbon menu, select **Import** and select the `RapidScreeningCombined_1_0_0_34.zip` that you downloaded earlier. Select **Next**. 
 
     ![Solutions](./assets/rsc2.png)
  
@@ -171,6 +172,8 @@ If you do not already have the Power Apps CLI installed, do the following:
 
 With the CLI installed, you'll need to connect to the Microsoft Dataverse environment where you created your blank portal and upload content by following these steps:
 
+1. Download the [`Rapid-Screening-Portal.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV1/Packages/Power-Platform/Rapid-Screening-Portal.zip) and unzip it to a local folder.
+
 1. From the command-line, enter the following command, making sure to replace `https://yourenvironment.crm.dynamics.com` with your Dataverse environment URL:
 
     ```powershell
@@ -178,7 +181,6 @@ With the CLI installed, you'll need to connect to the Microsoft Dataverse enviro
 
     pac paportal download --path d:\rapidscreening -Id f46b70cc-580b-4f1a-87c3-41deb48eb90d
     ```
-1. Extract the `RapidScreeningContent.zip` to a local folder.
 
 1. From the command-line, enter the following command, making sure to replace the `c:\yourpathhere` to point to the location where you extracted the `.zip` file in the previous step.
 
@@ -199,8 +201,8 @@ Luckily, you can get started by using the Solution Configuration Data the pre-po
 
 To install the configuration data, follow these steps:
 
-1. Download the [Solution.Config.Data_V5.zip](https://github.com/microsoft/RTW-Rapid-Screening/raw/main/Packages/Power-Platform/Solution-Data/Solution.Config.Data_V5.zip) file. There is no need to unzip the content.
-1. Download the content of the [ConfigurationMigrationTool folder](https://github.com/microsoft/RTW-Rapid-Screening/tree/main/Packages/Power-Platform/Solution-Data/ConfigurationMigrationTool or [download the tool from NuGet](https://docs.microsoft.com/en-us/dynamics365/customerengagement/on-premises/developer/download-tools-nuget?view=op-9-1).
+1. Download the [Solution.Config.Data_V5.zip](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV1/Packages/Power-Platform/Solution-Data/Solution.Config.Data_V5.zip) file. There is no need to unzip the content.
+1. Download the content of the [ConfigurationMigrationTool folder](https://github.com/microsoft/RTW-Rapid-Screening/tree/PortalV1/Packages/Power-Platform/Solution-Data/ConfigurationMigrationTool) or [download the tool from NuGet](https://docs.microsoft.com/en-us/dynamics365/customerengagement/on-premises/developer/download-tools-nuget?view=op-9-1).
 1. Once installed, launch the `DataMigrationUtility.exe`. This is a small utility that helps with data migration. 
 1. When prompted **What would you like to do with the Common Data Service Configuration Migration?**, select **Import data**, followed by **Continue**.
 
