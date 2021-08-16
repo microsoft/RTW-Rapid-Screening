@@ -119,14 +119,14 @@ The **Rapid Screening Combined** solution contains the data model, Power Apps, a
 
 To import it, follow these steps:
 
-1. Download the [`RapidScreeningCombined_1_0_0_34.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV1/Packages/Power-Platform/RapidScreeningCombined_1_0_0_34.zip) solution. Do not unzip it.
+1. Download the [`RapidScreeningCombined_1_0_0_39.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV2/Packages/Power-Platform/RapidScreeningCombined_1_0_0_39.zip) solution. Do not unzip it.
 1. Sign in to [Power Apps](https://make.powerapps.com).  Make sure that you are still in the correct environment (dev).
 
 1. Select **Solutions** from the navigation menu.
 
     ![Solutions](./assets/rsc1.png)
 
-1.	From the ribbon menu, select **Import** and select the `RapidScreeningCombined_1_0_0_34.zip` that you downloaded earlier. Select **Next**. 
+1.	From the ribbon menu, select **Import** and select the `RapidScreeningCombined_1_0_0_39.zip` that you downloaded earlier. Select **Next**. 
 
     ![Solutions](./assets/rsc2.png)
  
@@ -172,7 +172,7 @@ If you do not already have the Power Apps CLI installed, do the following:
 
 With the CLI installed, you'll need to connect to the Microsoft Dataverse environment where you created your blank portal and upload content by following these steps:
 
-1. Download the [`Rapid-Screening-Portal.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV1/Packages/Power-Platform/Rapid-Screening-Portal.zip) and unzip it to a local folder.
+1. Download the [`Rapid-Screening-Portal.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV2/Packages/Power-Platform/Rapid-Screening-Portal.zip) and unzip it to a local folder.
 
 1. From the command-line, enter the following command, making sure to replace `https://yourenvironment.crm.dynamics.com` with your Dataverse environment URL:
 
