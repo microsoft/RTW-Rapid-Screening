@@ -10,9 +10,9 @@ To deploy the complete Microsoft Rapid Screening Solution, you'll need to follow
 
 1. **Deploy Return to Workplace Managed Solution:** Download and import the [`returntoworkplace_managed.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV1/Packages/Power-Platform/returntoworkplace_managed.zip) solution.
 1. **Create a blank Power Apps Portal**
-1. **Deploy RapidScreeningCombined:** Dowload and import the [`RapidScreeningCombined_1_0_0_34.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV1/Packages/Power-Platform/RapidScreeningCombined_1_0_0_34.zip), making sure to use the latest solution version.
-1. **Upload Portal Content:** Download [`Rapid-Screening-Portal.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV1/Packages/Power-Platform/Rapid-Screening-Portal.zip) Portal Content and upload it to the Power Apps Portal.
-1. **Configure Solution:** (Optional) Configure the solution using [pre-configured settings](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV1/Packages/Power-Platform/Solution-Data/Solution.Config.Data_V5.zip) **or** configure the solution manually. 
+1. **Deploy RapidScreeningCombined:** Dowload and import the [`RapidScreeningCombined_1_0_0_39.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV2/Packages/Power-Platform/RapidScreeningCombined_1_0_0_39.zip), making sure to use the latest solution version.
+1. **Upload Portal Content:** Download [`Rapid-Screening-Portal.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV2/Packages/Power-Platform/Rapid-Screening-Portal.zip) Portal Content and upload it to the Power Apps Portal.
+1. **Configure Solution:** (Optional) Configure the solution using [pre-configured settings](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV2/Packages/Power-Platform/Solution-Data/Solution.Config.Data_V5.zip) **or** configure the solution manually. 
 
 ## Deploy Return to Workplace Managed Solution
 
@@ -20,7 +20,7 @@ The **Return to Workplace** solution is a managed solution which acts as the fou
 
 To install it, follow these steps:
 
-1. Download the [returntoworkplace_managed](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV1/Packages/Power-Platform/returntoworkplace_managed.zip) solution. Do not unzip it.
+1. Download the [returntoworkplace_managed](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV2/Packages/Power-Platform/returntoworkplace_managed.zip) solution. Do not unzip it.
 1.	Go to https://make.powerapps.com/ and login with the same account that was used to create the Power Apps environment
 2.	From the **Environment** drop-down, make sure that you have selected the **development** environment. 
     
@@ -71,7 +71,7 @@ To install it, follow these steps:
 15.	The solution import will take between on average 10 to 15 minutes, and you can monitor the import on the solution page. 
 
     ![Importing process](./assets/rtw14.png)
-
+Upd
 16.	Once the import is completed you will see a message indicating that the Solution Return to the Workplace imported successfully.
 
     ![Importing complete](./assets/rtw15.png)
