@@ -178,8 +178,6 @@ With the CLI installed, you'll need to connect to the Microsoft Dataverse enviro
 
     ```powershell
     pac auth create -u https://yourenvironment.crm.dynamics.com
-
-    pac paportal download --path d:\rapidscreening -Id f46b70cc-580b-4f1a-87c3-41deb48eb90d
     ```
 
 1. From the command-line, enter the following command, making sure to replace the `c:\yourpathhere` to point to the location where you extracted the `.zip` file in the previous step.
