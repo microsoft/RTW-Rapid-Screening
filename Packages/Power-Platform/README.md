@@ -10,7 +10,7 @@ To deploy the complete Microsoft Rapid Screening Solution, you'll need to follow
 
 1. **Deploy Return to Workplace Managed Solution:** Download and import the [`returntoworkplace_managed.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV2/Packages/Power-Platform/returntoworkplace_managed.zip) solution.
 1. **Create a blank Power Apps Portal**
-1. **Deploy RapidScreeningCombined:** Dowload and import the [`RapidScreeningCombined_1_0_0_39.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV2/Packages/Power-Platform/RapidScreeningCombined_1_0_0_39.zip), making sure to use the latest solution version.
+1. **Deploy RapidScreeningCombined:** Dowload and import the [`ConsortiumMemberGlobal_3_0_0_49.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV2/Packages/Power-Platform/ConsortiumMemberGlobal_3_0_0_49.zip), making sure to use the latest solution version.
 1. **Upload Portal Content:** Download [`Rapid-Screening-Portal.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV2/Packages/Power-Platform/Rapid-Screening-Portal.zip) Portal Content and upload it to the Power Apps Portal.
 1. **Configure Solution:** (Optional) Configure the solution using [pre-configured settings](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV2/Packages/Power-Platform/Solution-Data/Solution.Config.Data_V5.zip) **or** configure the solution manually. 
 
@@ -113,20 +113,20 @@ To create a blank portal, follow these steps:
     ![Portal provisioned.](./assets/recent-apps.png "Portal provisioned")
 
 
-## Deploy RapidScreeningCombined
+## Deploy ConsortiumMemberGlobal
 
-The **Rapid Screening Combined** solution contains the data model, Power Apps, and Power Automate elements required by the Microsoft Rapid Screening Solution.
+The **Consortium Member Global** solution contains the data model, Power Apps, and Power Automate elements required by the Microsoft Rapid Screening Solution.
 
 To import it, follow these steps:
 
-1. Download the [`RapidScreeningCombined_1_0_0_39.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV2/Packages/Power-Platform/RapidScreeningCombined_1_0_0_39.zip) solution. Do not unzip it.
+1. Download the [`ConsortiumMemberGlobal_3_0_0_49.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV2/Packages/Power-Platform/ConsortiumMemberGlobal_3_0_0_49.zip) solution. Do not unzip it.
 1. Sign in to [Power Apps](https://make.powerapps.com).  Make sure that you are still in the correct environment (dev).
 
 1. Select **Solutions** from the navigation menu.
 
     ![Solutions](./assets/rsc1.png)
 
-1.	From the ribbon menu, select **Import** and select the `RapidScreeningCombined_1_0_0_39.zip` that you downloaded earlier. Select **Next**. 
+1.	From the ribbon menu, select **Import** and select the `ConsortiumMemberGlobal_3_0_0_49.zip` that you downloaded earlier. Select **Next**. 
 
     ![Solutions](./assets/rsc2.png)
  
