@@ -1,0 +1,490 @@
+<entities >
+  <entity name="msft_area" displayname="Area" etc="10138" primaryidfield="msft_areaid" primarynamefield="msft_area" disableplugins="false">
+    <fields>
+      <field displayname="Area" name="msft_areaid" type="guid" primaryKey="true" />
+      <field displayname="Area" name="msft_area" type="string" customfield="true" />
+      <field displayname="Capacity" name="msft_capacity" type="number" customfield="true" />
+      <field displayname="Capacity of Current Phase" name="msft_capacityofcurrentphase" type="number" customfield="true" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Description" name="msft_description" type="string" customfield="true" />
+      <field displayname="Facility" name="msft_facilityid" type="entityreference" lookupType="msft_facility" customfield="true" />
+      <field displayname="Floor" name="msft_floorid" type="entityreference" lookupType="msft_floor" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="TimeSlotCapacity" name="cdl_timeslotcapacity" type="number" customfield="true" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msft_facility" displayname="Facility" etc="10151" primaryidfield="msft_facilityid" primarynamefield="msft_name" disableplugins="false">
+    <fields>
+      <field displayname="(Deprecated) Stage Id" name="stageid" type="guid" />
+      <field displayname="Address City" name="msft_addresscity" type="string" customfield="true" />
+      <field displayname="Address Country" name="msft_addresscountry" type="string" customfield="true" />
+      <field displayname="Address Country" name="msft_addresscountryid" type="entityreference" lookupType="msft_country" customfield="true" />
+      <field displayname="Address Latitude" name="msft_addresslatitude" type="string" customfield="true" />
+      <field displayname="Address Longitude" name="msft_addresslongitude" type="string" customfield="true" />
+      <field displayname="Address Postal Code" name="msft_addresspostalcode" type="string" customfield="true" />
+      <field displayname="Address State/Province" name="msft_addressstateprovinceid" type="entityreference" lookupType="msft_states" customfield="true" />
+      <field displayname="Address State/Province" name="msft_addressstateprovince" type="string" customfield="true" />
+      <field displayname="Address Street 1" name="msft_addressstreet1" type="string" customfield="true" />
+      <field displayname="Address Street 2" name="msft_addressstreet2" type="string" customfield="true" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Description" name="msft_description" type="string" customfield="true" />
+      <field displayname="Entry Window Interval" name="msft_entrywindowinterval" type="optionsetvalue" customfield="true" />
+      <field displayname="Facilities Closed Days" name="cdl_facilitiescloseddays" type="optionsetvaluecollection" customfield="true" />
+      <field displayname="Facility" name="msft_facilityid" type="guid" primaryKey="true" />
+      <field displayname="Group" name="msft_facilitygroupid" type="entityreference" lookupType="msft_facilitygroup" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="msft_name" type="string" customfield="true" />
+      <field displayname="Notify For Positive Result" name="cdl_notifyforpositiveresult" type="string" customfield="true" />
+      <field displayname="Notify For Positive Result For VIP" name="cdl_notifyforpositiveresultforvip" type="string" customfield="true" />
+      <field displayname="Number" name="msft_facilitynumber" type="string" customfield="true" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Process Id" name="processid" type="guid" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Reopen Phase" name="msft_reopenphaseid" type="entityreference" lookupType="msft_reopenphase" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Team" name="cdl_team" type="entityreference" lookupType="team" customfield="true" />
+      <field displayname="Time Zone" name="cdl_timezone" type="number" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="Type" name="msft_facilitytypeid" type="entityreference" lookupType="msft_facilitytype" customfield="true" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msft_facilitygroup" displayname="Facility Group" etc="10152" primaryidfield="msft_facilitygroupid" primarynamefield="msft_name" disableplugins="false">
+    <fields>
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Description" name="msft_description" type="string" customfield="true" />
+      <field displayname="Facility Group" name="msft_facilitygroupid" type="guid" primaryKey="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="msft_name" type="string" customfield="true" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Parent Facility Group" name="msft_parentfacilitygroupid" type="entityreference" lookupType="msft_facilitygroup" customfield="true" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msft_facilitytype" displayname="Facility Type" etc="10153" primaryidfield="msft_facilitytypeid" primarynamefield="msft_type" disableplugins="false">
+    <fields>
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Description" name="msft_description" type="string" customfield="true" />
+      <field displayname="Facility Type" name="msft_facilitytypeid" type="guid" primaryKey="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="Type" name="msft_type" type="string" customfield="true" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msft_reopenphase" displayname="Reopen Phase" etc="10165" primaryidfield="msft_reopenphaseid" primarynamefield="msft_name" disableplugins="false">
+    <fields>
+      <field displayname="Capacity Limit Percentage" name="msft_capacitylimitpercentage" type="decimal" customfield="true" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Description" name="msft_description" type="string" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Index" name="msft_phaseindex" type="number" customfield="true" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="msft_name" type="string" customfield="true" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Process Stage" name="msft_processstageid" type="entityreference" lookupType="processstage" customfield="true" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Reopen Phase" name="msft_reopenphaseid" type="guid" primaryKey="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msft_reopenphasetransition" displayname="Reopen Phase Transition" etc="10166" primaryidfield="msft_reopenphasetransitionid" primarynamefield="msft_name" disableplugins="false">
+    <fields>
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Current Reopen Phase" name="msft_currentreopenphase" type="entityreference" lookupType="msft_reopenphase" customfield="true" />
+      <field displayname="Facility" name="msft_facilityid" type="entityreference" lookupType="msft_facility" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="msft_name" type="string" customfield="true" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Proposed Reopen Phase" name="msft_proposedreopenphaseid" type="entityreference" lookupType="msft_reopenphase" customfield="true" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Reopen Phase Transition" name="msft_reopenphasetransitionid" type="guid" primaryKey="true" />
+      <field displayname="Review Comments" name="msft_reviewcomments" type="string" customfield="true" />
+      <field displayname="Review Status" name="msft_reviewstatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Reviewer" name="msft_reviewerid" type="entityreference" lookupType="systemuser" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Summary" name="msft_summary" type="string" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msft_solutionsetting" displayname="Solution Setting" etc="10169" primaryidfield="msft_solutionsettingid" primarynamefield="msft_name" disableplugins="false">
+    <fields>
+      <field displayname="Allow Employee Sentiment" name="msft_allowemployeesentiment" type="bool" customfield="true" />
+      <field displayname="Allow Guest Attestations" name="msft_allowguestattestations" type="bool" customfield="true" />
+      <field displayname="Allow Guest Registrations" name="msft_allowguestregistrations" type="bool" customfield="true" />
+      <field displayname="Allow In Person Screening" name="cdl_allowinpersonscreening" type="bool" customfield="true" />
+      <field displayname="Allow QR Codes" name="msft_allowqrcodes" type="bool" customfield="true" />
+      <field displayname="Allow Self Screening" name="cdl_allowselfscreening" type="bool" customfield="true" />
+      <field displayname="Allow Share Guest Registration" name="msft_allowshareguestregistration" type="bool" customfield="true" />
+      <field displayname="Allow Storing of Negative Attestations" name="msft_allowstoringnegativeattestations" type="bool" customfield="true" />
+      <field displayname="Appointment Booking Email" name="cdl_appointmentbookingemail" type="string" customfield="true" />
+      <field displayname="Appointment Reminder Email Template" name="cdl_appointmentreminderemailtemplate" type="string" customfield="true" />
+      <field displayname="Company Name" name="msft_companyname" type="string" customfield="true" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Email Body For Result Email" name="cdl_emailbodyforresultemail" type="string" customfield="true" />
+      <field displayname="Facility Group" name="msft_facilitygroupid" type="entityreference" lookupType="msft_facilitygroup" customfield="true" />
+      <field displayname="General Terms &amp; Agreement" name="msft_generaltermsagreement" type="string" customfield="true" />
+      <field displayname="Guest Health Terms &amp; Agreement" name="msft_guesthealthtermsagreement" type="string" customfield="true" />
+      <field displayname="Guest Privacy Terms &amp; Agreement" name="msft_guestprivacytermsagreement" type="string" customfield="true" />
+      <field displayname="Health &amp; Safety Email" name="msft_healthsafetyemail" type="string" customfield="true" />
+      <field displayname="Health &amp; Safety Instructions" name="msft_healthsafetyinstructions" type="string" customfield="true" />
+      <field displayname="Health and Safety Not feeling well Instructions" name="cdl_healthandsafetynotfeelingwellinstructions" type="string" customfield="true" />
+      <field displayname="Health Terms &amp; Agreement" name="msft_healthtermsagreement" type="string" customfield="true" />
+      <field displayname="Hide Personal Email For Employees" name="cdl_hidepersonalemailforemployees" type="bool" customfield="true" />
+      <field displayname="Hide Phone Number For Employees" name="cdl_hidephonenumberforemployees" type="bool" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Mask Employee Info In Pass" name="crdb7_maskemployeeinfoinpass" type="bool" customfield="true" />
+      <field displayname="Mask Employee Info In Screening App" name="crdb7_maskemployeeinfoinscreeningapp" type="bool" customfield="true" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="msft_name" type="string" customfield="true" />
+      <field displayname="Need To Attest For SelfScreening" name="cdl_needtoattestforselfscreening" type="bool" customfield="true" />
+      <field displayname="Opt Out Of Program Message" name="cdl_optoutofprogrammessage" type="string" customfield="true" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Photo Mandatory For Self Screening" name="cdl_photomandatoryforselfscreening" type="bool" customfield="true" />
+      <field displayname="Program Consent" name="cdl_programconsent" type="string" customfield="true" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Self Screening Consent" name="cdl_selfscreeningconsent" type="string" customfield="true" />
+      <field displayname="Solution Setting" name="msft_solutionsettingid" type="guid" primaryKey="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+      <field displayname="Show Vaccine Proof" name="cdl_showvaccineproof" type="bool" customfield="true" />
+      <field displayname="Vaccine Declaration" name="cdl_vaccinedeclaration" type="string" customfield="true" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msft_states" displayname="State/Province" etc="10170" primaryidfield="msft_statesid" primarynamefield="msft_name" disableplugins="false">
+    <fields>
+      <field displayname="Country" name="msft_countryid" type="entityreference" lookupType="msft_country" customfield="true" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="msft_name" type="string" customfield="true" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="State Code" name="msft_statecode" type="string" customfield="true" />
+      <field displayname="States" name="msft_statesid" type="guid" primaryKey="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msft_country" displayname="Country" etc="10142" primaryidfield="msft_countryid" primarynamefield="msft_name" disableplugins="false">
+    <fields>
+      <field displayname="Country" name="msft_countryid" type="guid" primaryKey="true" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="ISO Short code" name="msft_isoshortcode" type="string" customfield="true" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="msft_name" type="string" customfield="true" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="cdl_emailtemplates" displayname="EmailTemplates" etc="10173" primaryidfield="cdl_emailtemplatesid" primarynamefield="cdl_name" disableplugins="false">
+    <fields>
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Document" name="cdl_name" type="string" customfield="true" />
+      <field displayname="DocumentType" name="cdl_documenttype" type="optionsetvalue" customfield="true" />
+      <field displayname="EmailTemplates" name="cdl_emailtemplatesid" type="guid" primaryKey="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="cr683_facilityhourstemplate" displayname="Facility Hours Template" etc="10182" primaryidfield="cr683_facilityhourstemplateid" primarynamefield="cr683_templateid" disableplugins="false">
+    <fields>
+      <field displayname="Area" name="cdl_area" type="entityreference" lookupType="msft_area" customfield="true" />
+      <field displayname="Auto Generate Opt In" name="crec5_autogenerateoptin" type="bool" customfield="true" />
+      <field displayname="Capacity" name="cdl_capacity" type="number" customfield="true" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Days to Skip Selection" name="crec5_daystoskipselection" type="optionsetvaluecollection" customfield="true" />
+      <field displayname="End Time Hour" name="cdl_endtimehour" type="number" customfield="true" />
+      <field displayname="End Time Minute" name="cdl_endtimeminute" type="number" customfield="true" />
+      <field displayname="Facility" name="cdl_facility" type="entityreference" lookupType="msft_facility" customfield="true" />
+      <field displayname="Facility Hours Template" name="cr683_facilityhourstemplateid" type="guid" primaryKey="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Length Of Appointment" name="cdl_lengthofappointment" type="optionsetvalue" customfield="true" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Start Time Hour" name="cdl_starttimehour" type="number" customfield="true" />
+      <field displayname="Start Time Minute" name="cdl_starttimeminute" type="number" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="TemplateID" name="cr683_templateid" type="string" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="cdl_selfscreeningvideos" displayname="SelfScreening Videos" etc="10178" primaryidfield="cdl_selfscreeningvideosid" primarynamefield="cdl_name" disableplugins="false">
+    <fields>
+      <field displayname="cdl_image1id" name="cdl_image1id" type="guid" customfield="true" />
+      <field displayname="cdl_videoimageid" name="cdl_videoimageid" type="guid" customfield="true" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Gallery Order" name="cdl_galleryorder" type="number" customfield="true" />
+      <field displayname="image1" name="cdl_image1" type="imagedata" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="cdl_name" type="string" customfield="true" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="SelfScreening Videos" name="cdl_selfscreeningvideosid" type="guid" primaryKey="true" />
+      <field displayname="Sort Order" name="cdl_sortorder" type="number" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Testing Type" name="cdl_testingtype" type="optionsetvalue" customfield="true" />
+      <field displayname="Tile TItle" name="cdl_tiletitle" type="string" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+      <field displayname="Video Image" name="cdl_videoimage" type="imagedata" customfield="true" />
+      <field displayname="Video Link" name="cdl_videolink" type="string" customfield="true" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="cdl_themeguide" displayname="Theme Guide" etc="10179" primaryidfield="cdl_themeguideid" primarynamefield="cdl_name" disableplugins="false">
+    <fields>
+      <field displayname="Accent Color" name="cdl_accentcolor" type="string" customfield="true" />
+      <field displayname="Application Type" name="cdl_applicationtype" type="optionsetvalue" customfield="true" />
+      <field displayname="Border Color" name="cdl_bordercolor" type="string" customfield="true" />
+      <field displayname="Button Color" name="cdl_buttoncolor" type="string" customfield="true" />
+      <field displayname="Button Font" name="cdl_buttonfont" type="string" customfield="true" />
+      <field displayname="cdl_hso_mainlogoid" name="cdl_hso_mainlogoid" type="guid" customfield="true" />
+      <field displayname="cdl_hsomainlogoid" name="cdl_hsomainlogoid" type="guid" customfield="true" />
+      <field displayname="cdl_mainlogoid" name="cdl_mainlogoid" type="guid" customfield="true" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Focus Color" name="cdl_focuscolor" type="string" customfield="true" />
+      <field displayname="Font Color" name="cdl_fontcolor" type="string" customfield="true" />
+      <field displayname="HSO Accent Color" name="cdl_hso_accentcolorvar" type="string" customfield="true" />
+      <field displayname="HSO Border Color" name="cdl_hso_bordercolorvar" type="string" customfield="true" />
+      <field displayname="HSO Button Color" name="cdl_hso_buttoncolorvar" type="string" customfield="true" />
+      <field displayname="HSO Focus Color" name="cdl_hso_focuscolorvar" type="string" customfield="true" />
+      <field displayname="HSO Font Color" name="cdl_hso_fontcolorvar" type="string" customfield="true" />
+      <field displayname="HSO Main Color" name="cdl_hso_maincolorvar" type="string" customfield="true" />
+      <field displayname="HSO Main Logo" name="cdl_hso_mainlogo" type="imagedata" customfield="true" />
+      <field displayname="HSO Main Logo" name="cdl_hsomainlogo" type="imagedata" customfield="true" />
+      <field displayname="HSO Sub Color" name="cdl_hso_subcolorvar" type="string" customfield="true" />
+      <field displayname="HSO Text Color" name="cdl_hso_textcolorvar" type="string" customfield="true" />
+      <field displayname="HSO Text Color Heading" name="cdl_hso_textcolorheadingvar" type="string" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Main Color" name="cdl_maincolor" type="string" customfield="true" />
+      <field displayname="Main Logo" name="cdl_mainlogo" type="imagedata" customfield="true" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="cdl_name" type="string" customfield="true" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Pop Up Bg Color" name="cdl_popupbgcolor" type="string" customfield="true" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Sub Color" name="cdl_subcolor" type="string" customfield="true" />
+      <field displayname="Text Color" name="cdl_textcolor" type="string" customfield="true" />
+      <field displayname="Text Color Heading" name="cdl_textcolorheading" type="string" customfield="true" />
+      <field displayname="Theme Guide" name="cdl_themeguideid" type="guid" primaryKey="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Value" name="cdl_value" type="string" customfield="true" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msft_floor" displayname="Floor" etc="10154" primaryidfield="msft_floorid" primarynamefield="msft_floor" disableplugins="false">
+    <fields>
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Description" name="msft_description" type="string" customfield="true" />
+      <field displayname="Facility" name="msft_facilityid" type="entityreference" lookupType="msft_facility" customfield="true" />
+      <field displayname="Floor" name="msft_floor" type="string" customfield="true" />
+      <field displayname="Floor" name="msft_floorid" type="guid" primaryKey="true" />
+      <field displayname="Floor Index" name="msft_floorindex" type="number" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="cdl_vaccinebrand" displayname="Vaccine Brand" etc="10322" primaryidfield="cdl_vaccinebrandid" primarynamefield="cdl_name" disableplugins="false">
+    <fields>
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Manufacturer" name="cdl_manufacturer" type="string" customfield="true" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="cdl_name" type="string" customfield="true" />
+      <field displayname="Number of doses required" name="cdl_numberofdosesrequired" type="number" customfield="true" />
+      <field displayname="Organization Id" name="organizationid" type="entityreference" lookupType="organization" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Vaccine Brand" name="cdl_vaccinebrandid" type="guid" primaryKey="true" />
+      <field displayname="Vaccine Type" name="cdl_vaccinetype" type="optionsetvalue" customfield="true" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+</entities>
