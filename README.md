@@ -5,7 +5,7 @@
 
 ## Deployment Guide
 
-For installation and configuration, Follow the deployment guide at: https://github.com/microsoft/PowerApps-RTW-Canada-Solution/tree/main/Documentation
+For installation and configuration, Follow the deployment guide at: https://github.com/microsoft/RTW-Rapid-Screening/tree/PortalV2/Documentation/Deployment%20guide
 
 ## Latest Updates
 
@@ -19,6 +19,7 @@ For installation and configuration, Follow the deployment guide at: https://gith
 | May 18th, 2021   | Release version: 2.0.0.10  |
 | May 20th, 2021   | Release version: 2.0.0.11  |
 | June 9th, 2021   |V5 - Release version: 2.0.0.111 |
+| September 14th, 2021 | Portal + Vaccine Attestations, Release version: 3.0.0.51 |
 
 ## Disclaimer
  
