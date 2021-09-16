@@ -10,7 +10,7 @@ To deploy the complete Microsoft Rapid Screening Solution, you'll need to follow
 
 1. **Deploy Return to Workplace Managed Solution:** Download and import the [`returntoworkplace_managed.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV2/Packages/Power-Platform/returntoworkplace_managed.zip) solution.
 1. **Create a blank Power Apps Portal**
-1. **Deploy RapidScreeningCombined:** Dowload and import the [`ConsortiumMemberGlobal_3_0_0_49.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV2/Packages/Power-Platform/ConsortiumMemberGlobal_3_0_0_49.zip), making sure to use the latest solution version.
+1. **Deploy RapidScreeningCombined:** Dowload and import the [`ConsortiumMemberGlobal_2_0_0_200.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV2/Packages/Power-Platform/ConsortiumMemberGlobal_2_0_0_00.zip), making sure to use the latest solution version.
 1. **Upload Portal Content:** Download [`Rapid-Screening-Portal-Content.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV2/Packages/Power-Platform/Rapid-Screening-Portal-Content.zip) and upload it to the Power Apps Portal.
 1. **Configure Solution:** (Optional) Configure the solution using [pre-configured settings](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV2/Packages/Power-Platform/Solution-Data/Solution.Config.Data_V5.zip) **or** configure the solution manually. 
 
