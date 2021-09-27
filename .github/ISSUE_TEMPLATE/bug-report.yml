@@ -1,0 +1,79 @@
+name: 🐞 Bug report
+description: Report an anomaly or unexpected behavior with this solution
+labels: ['needs: triage :mag:', 'bug suspected']
+
+body:
+- type: markdown
+  attributes:
+    value: |
+      - [x] Bug
+
+      Thank you for reporting a bug! Use the sections below to submit a bug ONLY if it's related to the solution in this repo.
+      
+      - All bug reports are welcome - we want to fix them!
+      - Remember to include sufficient details and context.
+      - If you have multiple questions, suggestions, or bugs, please submit them in separate issues.
+
+      Please provide the following details about the issue you encountered.  
+
+- type: dropdown
+  id: solution-componet
+  validations:
+    required: true
+  attributes:
+    label: Which solution component is affected by this  issue?
+    options:
+      - App
+      - Portal
+      - Power BI
+      - Azure
+      - Entire solution
+
+- type: markdown
+  attributes:
+    value: |
+      Provide a clear & concise description of what the bug is.
+      
+- type: textarea
+  id: what-happened
+  attributes:
+    label: What happened?
+    description: Describe the observed behavior
+    placeholder: Tell us what you see!
+  validations:
+    required: true
+
+- type: textarea
+  id: steps
+  attributes:
+    label: Steps to reproduce
+    description: How do you reproduce this? Please provide as much step-by-step detail as possible.
+    value: |
+      1.
+      2.
+      3.
+  validations:
+    required: true
+
+- type: textarea
+  id: expected
+  attributes:
+    label: Expected behavior
+    description: What did you expect to happen when the reproduce steps are followed?
+    placeholder: Tell us what you expected to see!
+  validations:
+    required: true
+
+- type: textarea
+  id: solution-version
+  validations:
+    required: true
+  attributes:
+    label: Which version of the components are you using
+    placeholder: ConsortiumMemberGlobal_x_x_x_xxx, Solution.Config.Data_vx 
+
+- type: textarea
+  id: moar
+  attributes:
+    label: Additional environment details
+    description: Include as much detail about the environment you're targeting. This is required if "other (enter below)" is selected in the previous field.
