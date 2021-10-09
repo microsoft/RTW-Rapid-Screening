@@ -213,7 +213,7 @@ The production deployment slot, use `--deploymentProfile default` or simply omit
 
 ![Default Deployment Profile](./assets/default-profile.png)
 
-You can customize the deployment profiles by changing the values found in the `deployment-profiles` folder of the portal content. 
+You can customize the deployment profiles by changing the values found in the `deployment-profiles` folder of the portal content. For example, you can use deployment profiles to specify different `Authentication` values in the portal's `Site Settings`.
 
 For more information, please visit [deployment profiles](https://powerapps.microsoft.com/blog/power-apps-portals-create-deployment-profile-for-dev-test-prod-environment-using-power-apps-cli/)
 
