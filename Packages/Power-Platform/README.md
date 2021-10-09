@@ -155,6 +155,34 @@ To import it, follow these steps:
      ![Solutions](./assets/rsc8.png)
 
 
+## Configure languages
+
+You can add support for multiple languages for your portal. When you do, the portal will provide users with a language drop-down to change their selected language.
+
+All Rapid Screening Portal static content is localized using Power Apps Portal [content snippets](https://docs.microsoft.com/en-us/powerapps/maker/portals/configure/customize-content-snippets). The content is available in English and French, but you can add your own localized content as needed.
+
+To add support for **French** -- or any other language -- to your portal, you'll need to follow these steps:
+
+1. Sign in to [Power Apps](https://make.powerapps.com).  Make sure that you are still in the correct environment (dev).
+2. From the navigation, select **Apps**
+3. From the list of applications, launch the **Portal Management** 
+4. From the **Portal Management** app, select the **Settings** gear icon, followed by **Advanced Settings**.
+![Settings](./assets/locale1.png)
+5. By default, you should see the **Business Management** area. Use the drop-down menu next to **Settings**, to reveal the other settings areas. 
+![Settings](./assets/locale2.png)
+6. In the list of areas, select **Administration**, in the **System** column.
+![Settings](./assets/locale3.png)
+7. In the **Administration** settings area, select **Languages**
+![Settings](./assets/locale4.png)
+8. From the **Language Settings** dialog, find the entry for **French** and select it. Note that there isn't a specific entry for Canadian French -- but the Rapid Screening Portal will deploy assets Canadian French and inherit from French.
+![Settings](./assets/locale5.png)
+9. Select **Apply** to save your changes.
+10. When prompted to **Confirm Language Change**, select **OK**
+11. The system will configure your portal environment to support the language(s) you added. This will take several minutes.
+![Settings](./assets/locale6.png)
+
+Once you have added support for additional languages, you can upload the portal content.
+
 ## Upload portal content
 
 The portal content includes all the web pages and resources needed to run the Microsoft Rapid Screening Portal.
@@ -172,7 +200,7 @@ If you do not already have the Power Apps CLI installed, do the following:
 
 With the CLI installed, you'll need to connect to the Microsoft Dataverse environment where you created your blank portal and upload content by following these steps:
 
-1. Download the [`Rapid-Screening-Portal=Content.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV2/Packages/Power-Platform/Rapid-Screening-Portal-Content.zip) and unzip it to a local folder.
+1. Download the [`Rapid-Screening-Portal-Content.zip`](https://github.com/microsoft/RTW-Rapid-Screening/raw/PortalV2/Packages/Power-Platform/Rapid-Screening-Portal-Content.zip) and unzip it to a local folder.
 
 1. From the command-line, enter the following command, making sure to replace `https://yourenvironment.crm.dynamics.com` with your Dataverse environment URL:
 
@@ -217,6 +245,23 @@ You can customize the deployment profiles by changing the values found in the `d
 
 For more information, please visit [deployment profiles](https://powerapps.microsoft.com/blog/power-apps-portals-create-deployment-profile-for-dev-test-prod-environment-using-power-apps-cli/)
 
+## Remove Sample Home Page
+
+When you deploy the Rapid Screening Content where a previous portal was installed (including the default portal template), you may find that your newly deployed portal continues to show the previous portal's home page.
+
+To fix it, you simply need to remove the duplicated home page by following these steps:
+
+1. Sign in to [Power Apps](https://make.powerapps.com).  Make sure that you are still in the correct environment (dev).
+2. From the navigation, select **Apps**
+3. From the list of applications, launch the **Portal Management** 
+1.	In the Portal Management application, use the left navigation to go to **Websites** (under **Website**).
+2.	From the list of **Active Websites** that will appear, select the **Microsoft Rapid Screening Portal** to edit it.
+3.	From the **Root Pages** tab, select the home page (named **/**) to edit it
+4.	From **/ (Web Page – Information)**, under the **General** tab, look for the **Localized Content** grid.
+5.	In the **Localized Content** grid, you’ll most likely see three files: **Bienvenu(e)**, **Welcome**, and **Home**. Note that **Home** may have another name, but it will be the only localized content that has a different **Modified On** date and time. Select it to edit it.
+6.	From the **Home (Web Page – Content Page)**, select the **Delete** button to remove the page.
+7.	Once deleted, resync the portal and you should see the Rapid Screening Portal landing page.
+
 
 ## Configure solution
 
@@ -251,3 +296,9 @@ To install the configuration data, follow these steps:
  
     ![Environmnet](./assets/config6.png)
 )
+
+## Advanced Configurations
+
+The Portal supports various solution settings which can be configured by using the **Portal Management** tool and editing the **Site Settings** entries.
+
+Setting|Description|Possible Value
