@@ -190,6 +190,33 @@ With the CLI installed, you'll need to connect to the Microsoft Dataverse enviro
 
 Once the portal content is uploaded, your blank portal will now contain the Micrososft Rapid Screening Portal. 
 
+**NOTE:** When uploading the portal content to dev, qa, uat, and production environments, you can specify a `deploymentProfile` parameter to help you differentiate each environment.
+
+For example, use:
+
+```powershell
+pac paportal upload --path c:\yourpathhere --deploymentProfile dev
+```
+
+Do deploy to your `dev` environment, and 
+
+```powershell
+pac paportal upload --path c:\yourpathhere --deploymentProfile qa
+```
+For your `qa` environment.
+
+The portal will automatically show the deployment slot next to the name:
+
+![Dev Deployment Profile](./assets/dev-profile.png)
+
+The production deployment slot, use `--deploymentProfile default` or simply omit the `--deploymentProfile` parameter.
+
+![Default Deployment Profile](./assets/default-profile.png)
+
+You can customize the deployment profiles by changing the values found in the `deployment-profiles` folder of the portal content. 
+
+For more information, please visit [deployment profiles](https://powerapps.microsoft.com/blog/power-apps-portals-create-deployment-profile-for-dev-test-prod-environment-using-power-apps-cli/)
+
 
 ## Configure solution
 
