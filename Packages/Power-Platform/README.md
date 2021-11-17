@@ -218,7 +218,17 @@ With the CLI installed, you'll need to connect to the Microsoft Dataverse enviro
 
 Once the portal content is uploaded, your blank portal will now contain the Micrososft Rapid Screening Portal. 
 
-**NOTE:** When uploading the portal content to dev, qa, uat, and production environments, you can specify a `deploymentProfile` parameter to help you differentiate each environment.
+> **NOTE:** The portal content package attempts to include steps to upgrade previous portal deployments. As such, you may get multiple warning messages during the deployment similar to the following message:
+> ```
+> Updating table  with record id:00000000-0000-0000-0000-000000000000 FAILED due to annotation With Id = 00000000-0000-0000-0000-000000000000 Does Not Exist
+> ```
+> These messages (which may or may not have a different Id) are completely normal. They simply refer to an attempt for the deployment tool to update content which does not already exist on your portal instance. 
+>
+> **You can safely ignore these warnings**.
+
+
+### Using Deployment Profiles
+When uploading the portal content to dev, qa, uat, and production environments, you can specify a `deploymentProfile` parameter to help you differentiate each environment.
 
 For example, use:
 
